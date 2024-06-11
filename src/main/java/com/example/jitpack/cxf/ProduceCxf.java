@@ -22,7 +22,7 @@ public class ProduceCxf {
         CxfEndpoint cxfEndpoint = new CxfEndpoint();
     //    cxfEndpoint.setAddress("http://localhost:8090/soap/hl7/patientId");
         cxfEndpoint.setWsdlURL("http://localhost:8090/soap/hl7/patientId?wsdl");
-        cxfEndpoint.setDataFormat(DataFormat.MESSAGE);
+        cxfEndpoint.setDataFormat(DataFormat.RAW);
         return cxfEndpoint;
     }
 }
